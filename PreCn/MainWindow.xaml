@@ -1,0 +1,30 @@
+﻿<Window x:Class="PreCn.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PreCn"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <Grid Height="427" VerticalAlignment="Top">
+        <Label x:Name="lblPrimeiroNum" Content="Digite o Primeiro Número" HorizontalAlignment="Left" Margin="103,31,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNumero1" HorizontalAlignment="Left" Margin="117,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblSegundoNun" Content="Digite o Segundo Número" HorizontalAlignment="Left" Margin="104,103,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNumero2" HorizontalAlignment="Left" Margin="117,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSomar" Content="Somar" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnSomar_Click" Margin="154,188,0,0"/>
+        <Label x:Name="lblResultado" Content="" Margin="0,388,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.33,3.16" Height="29" HorizontalAlignment="Center" Width="220">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="btnSubtrair" Content="Subtrair" HorizontalAlignment="Left" Margin="146,231,0,0" VerticalAlignment="Top" Click="btnSubtrair_Click"/>
+        <Button x:Name="btnMultiplicar" Content="Multiplicar" HorizontalAlignment="Left" Margin="139,277,0,0" VerticalAlignment="Top" Click="btnMultiplicar_Click"/>
+        <Button x:Name="btnDivisao" Content="Divisão" HorizontalAlignment="Left" Margin="149,329,0,0" VerticalAlignment="Top" Click="btnDivisao_Click"/>
+
+    </Grid>
+</Window>
